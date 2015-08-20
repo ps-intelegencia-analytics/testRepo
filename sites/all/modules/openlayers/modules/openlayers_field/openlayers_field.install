@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_field_schema().
+ */
+function openlayers_field_field_schema($field) {
+  return array(
+    'columns' => array(
+      'value' => array(
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => FALSE
+      )
+    )
+  );
+}
